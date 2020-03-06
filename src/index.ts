@@ -3,7 +3,6 @@ export namespace Loop {
     /**
      * This is used to set the frequency of updates.  
      * Updates are done in consistent intervals, as far as the js event loop will allow it.
-     * @param {Number} value
      */
     export function setUpdateFrequency(value: number) {
         update_time_delta = 1000 / value;
@@ -13,7 +12,6 @@ export namespace Loop {
     /**
      * Used to set the maximum number of updates that can happen during a single frame  
      * After this limit is reached, further updates are delayed until the next frame
-     * @param {Number} value
      */
     export function setMaxConsecutiveUpdates(value: number) {
         max_consecutive_updates = value;
@@ -21,8 +19,8 @@ export namespace Loop {
 
     /**
      * Starts the main loop. 
-     * @param {()=>void} update Place your game logic and/or simulations in here.
-     * @param {(interpolation: number)=>void} render Place anything that needs to run as fast as the browser can manage it here.
+     * @param update Place your game logic and/or simulations in here.
+     * @param render Place anything that needs to run as fast as possible here.
      */
     export function run(
         update: ()=>void, 
