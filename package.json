@@ -1,0 +1,22 @@
+{
+  "name": "gameloop",
+  "version": "1.0.0",
+  "description": "Loop with a constant update frequency and lerped rendering useful in making games.",
+  "main": "index.js",
+  "keywords": [
+    "loop",
+    "game",
+    "lerp",
+    "mainloop",
+    "gameloop"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Jan Procházka",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "3.8.3"
+  },
+  "repository": "https://github.com/jprochazk/gameloop"
+}
